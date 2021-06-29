@@ -1,13 +1,15 @@
-const socket=io.connect('/');
+const socket=io('/');
 const videoGrid = document.getElementById('video-grid');
 const myVideo= document.createElement('video');
 
 myVideo.muted= true;
 
 var peer = new Peer(undefined,{
-    path : '/pathjs',
+  //  key='peerjs',
+    path : '/peerjs',
     host: '/',
     port: '5000'
+    
 
 }); 
 
@@ -36,7 +38,9 @@ navigator.mediaDevices.getUserMedia({
 
 peer.on('open', id =>{
     socket.emit('join-room', ROOM_ID, id);
+   
 });
+
 
 const connectToNewUser = (userId, stream)=>{
     const call = peer.call(userId, stream);
@@ -45,6 +49,7 @@ const connectToNewUser = (userId, stream)=>{
         addVideoStream(video, userVideoStream)
     })
 }
+
 
 const addVideoStream = (video, stream) =>{
     video.srcObject = stream;
