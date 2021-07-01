@@ -1,4 +1,5 @@
 const socket = io('/')
+const name1= prompt("Enter your name : ");
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
   path: '/peerjs',
@@ -36,8 +37,10 @@ navigator.mediaDevices.getUserMedia({
       text.val('')
     }
   });
-  socket.on("createMessage", message => {
-    $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
+  socket.on("createMessage", (message, user_name) => {
+    $("ul").append(`<li class="message"><b> ${user_name == name1? "me" : user_name}</b><br/>
+  
+    ${message}</li>`);
     scrollToBottom()
   })
 })
@@ -47,7 +50,7 @@ socket.on('user-disconnected', userId => {
 })
 
 myPeer.on('open', id => {
-  socket.emit('join-room', ROOM_ID, id)
+  socket.emit('join-room', ROOM_ID, id, name1)
 })
 
 function connectToNewUser(userId, stream) {

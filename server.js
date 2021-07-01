@@ -24,13 +24,13 @@ app.get('/:room', (req, res) => {
 })
 
 io.on('connection', socket => {
-  socket.on('join-room', (roomId, userId) => {
+  socket.on('join-room', (roomId, userId, user_name) => {
     socket.join(roomId)
     socket.to(roomId).broadcast.emit('user-connected', userId);
     // messages
     socket.on('message', (message) => {
       //send message to the same room
-      io.to(roomId).emit('createMessage', message)
+      io.to(roomId).emit('createMessage', message, user_name)
   }); 
 
     socket.on('disconnect', () => {
