@@ -10,7 +10,6 @@ var peer = new Peer(undefined,{
     host: '/',
     port: '5000'
     
-
 }); 
 
 let myVideoStream 
@@ -35,12 +34,15 @@ navigator.mediaDevices.getUserMedia({
     });
 });
 
+socket.on('user-connected', (userId) => {
+    //console.log("USER CONNECTED: "+ userId);
+    setTimeout(connectToNewUser,1000,userId,stream)
+})
 
 peer.on('open', id =>{
     socket.emit('join-room', ROOM_ID, id);
    
 });
-
 
 const connectToNewUser = (userId, stream)=>{
     const call = peer.call(userId, stream);
@@ -50,7 +52,6 @@ const connectToNewUser = (userId, stream)=>{
     })
 }
 
-
 const addVideoStream = (video, stream) =>{
     video.srcObject = stream;
     video.addEventListener('loadedmetadata', () => {
@@ -59,3 +60,4 @@ const addVideoStream = (video, stream) =>{
     
     videoGrid.append(video); 
 }; 
+
