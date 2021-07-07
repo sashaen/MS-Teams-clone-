@@ -105,6 +105,16 @@ const playStop = () => {
   }
 }
 
+function closeWindow(){
+  if (confirm("Press 'OK' to leave the Eternity Test, or 'Cancel' if you want to stay: "))
+  {         
+     window.location="http://google.com";
+  }
+     else
+  {         
+     window.location= "http://www.myWebPage.com";
+  }
+}
 const setMuteButton = () => {
   const html = `
     <i class="fas fa-microphone"></i>
