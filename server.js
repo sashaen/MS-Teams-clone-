@@ -2,6 +2,22 @@ const express = require('express')
 const app = express()
 // const cors = require('cors')
 // app.use(cors())
+
+require('dotenv').config();
+
+const { auth } = require('express-openid-connect');
+app.use(
+  auth({
+    issuerBaseURL: process.env.ISSUER_BASE_URL,
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.CLIENT_ID,
+    secret: process.env.SECRET,
+   
+  })
+);
+
+
+
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const { ExpressPeerServer } = require('peer');
@@ -9,6 +25,8 @@ const peerServer = ExpressPeerServer(server, {
   debug: true
 });
 const { v4: uuidV4 } = require('uuid')
+
+
 
 app.use('/peerjs', peerServer);
 
