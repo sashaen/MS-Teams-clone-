@@ -27,7 +27,7 @@ navigator.mediaDevices.getUserMedia({
     //console.log("USER CONNECTED: "+ userId);
     setTimeout(connectToNewUser,1000,userId,stream)
 })
-
+  
   // input value
   let text = $("input");
   // when press enter send message
@@ -37,21 +37,25 @@ navigator.mediaDevices.getUserMedia({
       text.val('')
     }
   });
-  socket.on("createMessage", (message, user_name) => {
-    $("ul").append(`<li class="message"><b> ${user_name == name1? "me" : user_name}</b><br/>
-  
+  socket.on('createMessage', (message, username) => {
+    $('ul').append(`<li class="message"><b> ${username}</b><br/>
+    
     ${message}</li>`);
-    scrollToBottom()
-  })
-})
+    scrollToBottom();
+  });
+});
+
+
 
 socket.on('user-disconnected', userId => {
   if (peers[userId]) peers[userId].close()
 })
 
 myPeer.on('open', id => {
-  socket.emit('join-room', ROOM_ID, id, name1)
+  socket.emit('join-room', ROOM_ID, id, username)
 })
+
+
 
 function connectToNewUser(userId, stream) {
   const call = myPeer.call(userId, stream)

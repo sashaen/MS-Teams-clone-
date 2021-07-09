@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     
+  <script>
+        
+    const username = "<%= name %>"
+    const pic = "<%= pic %>"
+   
+ </script>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="container-fluid">
+            <img src="paris.jpg" class="mx-auto rounded-circle d-block" style="width:30%"> 
+            <figure class="text-center">
+                <h3>
+                    Hello,
+                    <small class="text-muted"> <%= name %></small>
+                  </h3>
+            </figure>
+          </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                <h4><b>Make Call</b></h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <a
+                class="collapsed card-link"
+                data-toggle="collapse"
+                href="#collapseTwo"
+              >
+              <h4><b>Join Call</b></h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="collapseOne" class="collapse show">
+            <div class="card-body">
+              <input type="text">
+              <div class="d-grid gap-2 d-md-block">
+                <button type="button" class="btn btn-outline-primary">Copy ID</button>
+                <button type="button" class="btn btn-outline-primary">Join Room</button>
+                
+              </div>
+
+            </div>
+          </div></div
+        >
+        <div class="col">
+          <div id="collapseTwo" class="collapse">
+            <div class="card-body">
+                <input type="text">
+                <button type="button" class="btn btn-outline-primary">Join Room</button>
+               
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

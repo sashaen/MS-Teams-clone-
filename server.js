@@ -5,7 +5,9 @@ const app = express()
 
 require('dotenv').config();
 
-const { auth } = require('express-openid-connect');
+const { auth, requiresAuth } = require('express-openid-connect');
+
+
 app.use(
   auth({
     authRequired: false,
@@ -17,8 +19,6 @@ app.use(
    
   })
 );
-
-
 
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
@@ -40,17 +40,33 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:room', (req, res) => {
+  console.log(req.oidc.user);
   res.render('room', { roomId: req.params.room, name:req.oidc.user.name})
 })
 
+
+app.get('/homePage', (req, res) => {
+  console.log(req.oidc.user);
+  res.render('homePage', { name:req.oidc.user.name, pic:req.oidc.user.picture , roomId: req.params.room})
+})
+
+
+
+
+
+
+
+
+
+
 io.on('connection', socket => {
-  socket.on('join-room', (roomId, userId, user_name) => {
+  socket.on('join-room', (roomId, userId, username) => {
     socket.join(roomId)
     socket.to(roomId).broadcast.emit('user-connected', userId);
     // messages
     socket.on('message', (message) => {
       //send message to the same room
-      io.to(roomId).emit('createMessage', message, user_name)
+      io.to(roomId).emit('createMessage', message, username)
   }); 
 
     socket.on('disconnect', () => {
