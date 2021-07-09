@@ -36,8 +36,19 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+  res.render('homePage')
+})
+
+app.get('/meeting', (req, res) => {
+  res.redirect(uuidv4());
+}) 
+
+app.get('/', (req, res) => {
   res.redirect(`/${uuidV4()}`)
 })
+
+// (--------(00)--------) \\ 
+
 
 app.get('/:room', (req, res) => {
   console.log(req.oidc.user);
@@ -47,17 +58,8 @@ app.get('/:room', (req, res) => {
 
 app.get('/homePage', (req, res) => {
   console.log(req.oidc.user);
-  res.render('homePage', { name:req.oidc.user.name, pic:req.oidc.user.picture , roomId: req.params.room})
+  res.render('/homePage', { name:req.oidc.user.name, pic:req.oidc.user.picture , roomId: req.params.room})
 })
-
-
-
-
-
-
-
-
-
 
 io.on('connection', socket => {
   socket.on('join-room', (roomId, userId, username) => {
