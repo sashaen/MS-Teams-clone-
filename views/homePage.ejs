@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,10 +16,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     
+
+      
  
 
   </head>
+
   <body>
     <div class="container">
         <div class="container-fluid">
@@ -57,7 +62,8 @@
         <div class="col">
           <div id="collapseOne" class="collapse show">
             <form class="card-body" action="/makeID" method="post">
-                <input type="text" name="makingid" value="PLease Create your own ID" id="myInput"(id is the name of the text, you can change it later)>
+                <input type="text" name="makingid" value="myfunction()" id="myInput"> 
+              
               <div class="d-grid gap-2 d-md-block">
                 <button type="button" class="btn btn-outline-primary" onclick="Hello()">Copy ID</button>
                 <button type="submit" class="btn btn-outline-primary" >Join Room</button>
@@ -82,11 +88,65 @@
   </body>
 </html>
 
+<style>
+  
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/173252/black_static_bg3.png') repeat 0 0;
+	-webkit-animation: 30s linear 0s normal none infinite animate;
+	-moz-animation: 30s linear 0s normal none infinite animate;
+	-ms-animation: 30s linear 0s normal none infinite animate;
+	-o-animation: 30s linear 0s normal none infinite animate;
+	animation: 30s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+
+</style>
+
 <script>
     function Hello() {
   var copyText = document.getElementById('myInput')
   copyText.select();
   document.execCommand('copy')
   console.log('Copied Text')
+
+  function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+const x = uuidv4();
+document.getElementById("myInput").SetAttribute('value', x);
+console.log(uuidv4());
+
 }
 </script> 
