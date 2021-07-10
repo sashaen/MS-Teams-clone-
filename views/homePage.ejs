@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap Example</title>
+    <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script>
-        
-        const ROOM_ID = "<%= roomId %>"
-        const username = "<%= name %>"
-        const pic = "<%= pic %>"
-    </script>
+    
 
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -29,7 +24,7 @@
             <figure class="text-center">
                 <h3>
                     Hello,
-                    <small class="text-muted"> <% = name%></small>
+                    <small class="text-muted"> mm </small>
                   </h3>
             </figure>
           </div>
@@ -39,7 +34,7 @@
           <div class="card">
             <div class="card-header">
               <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                <h4><b>Make Call</b></h4>
+                <h4><b>Create Meeting</b></h4>
               </a>
             </div>
           </div>
@@ -52,7 +47,7 @@
                 data-toggle="collapse"
                 href="#collapseTwo"
               >
-              <h4><b>Join Call</b></h4>
+              <h4><b>Join Meeting</b></h4>
               </a>
             </div>
           </div>
@@ -61,25 +56,25 @@
       <div class="row">
         <div class="col">
           <div id="collapseOne" class="collapse show">
-            <div class="card-body">
-                <input type="text" value="<% = roomId %>"(Can be of your choice) id="myInput"(id is the name of the text, you can change it later)>
+            <form class="card-body" action="/makeID" method="post">
+                <input type="text" name="makingid" value="PLease Create your own ID" id="myInput"(id is the name of the text, you can change it later)>
               <div class="d-grid gap-2 d-md-block">
                 <button type="button" class="btn btn-outline-primary" onclick="Hello()">Copy ID</button>
-                <button type="button" class="btn btn-outline-primary" onclick="">Join Room</button>
+                <button type="submit" class="btn btn-outline-primary" >Join Room</button>
                 
               </div>
 
-            </div>
+            </form>
           </div></div>
         
         <div class="col">
           <div id="collapseTwo" class="collapse">
-            <div class="card-body">
-                <input type="text">
-                <button type="button" class="btn btn-outline-primary">Join Room</button>
-               
+            <form class="card-body" action="/join" method="post">
+                <input type="text" name="putID">
+                <button type="submit"class="btn btn-outline-primary">Join Room</button>
                 
-            </div>
+                
+            </form>
           </div>
         </div>
       </div>
@@ -94,4 +89,4 @@
   document.execCommand('copy')
   console.log('Copied Text')
 }
-</script>
+</script> 

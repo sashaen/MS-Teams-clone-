@@ -27,7 +27,7 @@ const peerServer = ExpressPeerServer(server, {
   debug: true
 });
 const { v4: uuidV4 } = require('uuid')
-
+app.use(express.urlencoded({ extended: true }))
 
 
 app.use('/peerjs', peerServer);
@@ -35,31 +35,32 @@ app.use('/peerjs', peerServer);
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
+app.get('/', requiresAuth(), (req,  res) => {
   res.render('homePage')
 })
 
-app.get('/meeting', (req, res) => {
-  res.redirect(uuidv4());
+app.get('/meeting', requiresAuth(), (req, res) => {
+  res.redirect(uuidV4());
 }) 
 
-app.get('/', (req, res) => {
-  res.redirect(`/${uuidV4()}`)
-})
 
-// (--------(00)--------) \\ 
+app.post('/join', requiresAuth(), (req, res) => {
+  const uuiid2 = req.body.putID;
+  res.redirect(uuiid2);
+}) 
 
+app.post('/makeID', requiresAuth(), (req, res) => {
+  const uuiid = req.body.makingid;
+  //console.log()
+  res.redirect(uuiid);
+}) 
 
-app.get('/:room', (req, res) => {
+app.get('/:room', requiresAuth(), (req, res) => {
   console.log(req.oidc.user);
-  res.render('room', { roomId: req.params.room, name:req.oidc.user.name})
+  res.render('room', { roomId: req.params.room, name:req.oidc.user.name, })
 })
 
 
-app.get('/homePage', (req, res) => {
-  console.log(req.oidc.user);
-  res.render('/homePage', { name:req.oidc.user.name, pic:req.oidc.user.picture , roomId: req.params.room})
-})
 
 io.on('connection', socket => {
   socket.on('join-room', (roomId, userId, username) => {
