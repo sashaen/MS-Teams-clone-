@@ -6,5 +6,5 @@
 
 ______________________________________________________________________________________________________________________
 
-# Update sheet of day to day task:
-https://docs.google.com/spreadsheets/d/1tFu82krySQufNrbfuBdZZUN_RruM34zAaCJHzcl5IR0/edit#gid=0
+# Sprint sheet of day to day task by using Aglie methodology:
+https://docs.google.com/spreadsheets/d/1Z6EWc6gf-vFaYvO6Fkzhe3O8OhwqvQwr_W18C_bTQCw/edit?usp=sharing
