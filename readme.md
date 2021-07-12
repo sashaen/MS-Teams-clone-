@@ -9,34 +9,34 @@ I used agile methodaology for this project as mentioned as part of this program.
 __________________________________________________________________________________________________________________________
 
 ## Features created for getting into room for video call: 
-- #### Authentication : 
+ #### Authentication : 
 - Provides sign-in and sign-up feature, provides security login and logout. 
 - Used Auth0 SDK
 
-- #### Create Meeting Button :
+ #### Create Meeting Button :
 - Creates Unique ID for every meeting by clicking on copy ID button that also copies it to clipboard. 
 - The person who created meeting link will join by join button near copy button.
 
-- #### Join Meeting Button :
+ #### Join Meeting Button :
 - Having an input bar that is filled by the meeting link by other friend users and after it, join room by joining button next to it.
 __________________________________________________________________________________________________________________________
 ## [After Entering room, actual features that help in making video conversation more user friendly are:]
 __________________________________________________________________________________________________________________________
 
 ## Features in video calling room :
-- #### 1:1 Video calling, (as mendatory task for MS Engage):
+ #### 1:1 Video calling, (as mendatory task for MS Engage):
 - This is possible to make 1:1 video calling easily on this website with more functions, that will be described as below features.
 
-- #### Group Video Calling:
+ #### Group Video Calling:
 - This feature allows upto 6 people to easily connect with video calls in a paricular room.
 
-- #### Mute/Unmute Audio Button:
+ #### Mute/Unmute Audio Button:
 - This feature allows one person to have control on muting or unmuting the video during video call.
 
-- #### Stop/Play Video Button:
+ #### Stop/Play Video Button:
 - This feature allows one person to have control on stopping or playing the video during video call.
 
-- #### Live Chat feature during the meet:
+ #### Live Chat feature during the meet:
 - This feature provides functionality of doing chat through chat box, and messages in chat function are shown below every user's name, so that every message is idenical with respect to the user.
 __________________________________________________________________________________________________________________________
 
