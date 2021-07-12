@@ -5,13 +5,6 @@ ________________________________________________________________________________
 # Deep design of website with features:
 ![DESIGN OF MS CLONE (1)](https://user-images.githubusercontent.com/62839539/125268962-df9f8280-e325-11eb-90dc-5e9f221589dd.png)
 
-
-________________________________________________________________________________________________________________________
-
-
-# Flow of website (basic)
-![flow of vcwebsite](https://user-images.githubusercontent.com/62839539/125234195-d4386100-e2fd-11eb-8d67-5833739ab556.png)
-
 _______________________________________________________________________________________________________________________
 
 # Sprint sheet of day to day task by using Aglie methodology:
