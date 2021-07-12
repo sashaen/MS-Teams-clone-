@@ -1,22 +1,23 @@
 # Video calling-chat web application
 - Hi everyone! 
 - I created this video calling-chat web application for MS ENGAGE Program 2021. The website is fully functional and useable in real life. This is handy and easy to use. This lets a group of people to talk , chat and share any information together. This is functioned like this so that no two different meeting will clash by same name. Every time a unique ID will be created to enter room for video call and chat. 
+I used agile methodaology for this project as mentioned as part of this program. I divided my whole task into 4 weeks. I started completing my tasks as sprint wise that helped in smooth learing and building the product. 
+
+# Deep design of website with features:
+![DESIGN OF MS CLONE (1)](https://user-images.githubusercontent.com/62839539/125268962-df9f8280-e325-11eb-90dc-5e9f221589dd.png)
 
 ## Tech Stack used for project:
-
-- ### BackEnd :
+### BackEnd :
 - -- Node.js with Xpress.js Framework 
 
-- ### Peer to Peer Connection :
+### Peer to Peer Connection :
 - --  webRTC and Socket.io 
 
-- ### FrontEnd :
+### FrontEnd :
 - -- Html, Css, JavaScript, Bootstrap 
 
-- ### Authentication :
+### Authentication :
 - -- Auth0 SDK
-
-__________________________________________________________________________________________________________________________
 
 ## Features created for getting into room for video call: 
 ### Authentication : 
@@ -30,8 +31,7 @@ ________________________________________________________________________________
 ### Join Meeting Button :
 - Having an input bar that is filled by the meeting link by other friend users and after it, join room by joining button next to it.
 
-
-#### After Entering room, actual features that help in making video conversation more reliable are:
+## [After Entering room, actual features that help in making video conversation more user friendly are:]
 
 ## Features in video calling room :
 ### 1:1 Video calling, (as mendatory task for MS Engage):
@@ -48,12 +48,6 @@ ________________________________________________________________________________
 
 ### Live Chat feature during the meet:
 - This feature provides functionality of doing chat through chat box, and messages in chat function are shown below every user's name, so that every message is idenical with respect to the user.
-
-________________________________________________________________________________________________________________________
-
-# Deep design of website with features:
-![DESIGN OF MS CLONE (1)](https://user-images.githubusercontent.com/62839539/125268962-df9f8280-e325-11eb-90dc-5e9f221589dd.png)
-
 _______________________________________________________________________________________________________________________
 
 # Sprint sheet of day to day task by using Aglie methodology:
