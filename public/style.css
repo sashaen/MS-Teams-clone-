@@ -70,6 +70,7 @@
     padding-top: 5px;
     color: #F5F5F5;
     text-align: center;
+    text-decoration: solid;
 }
 
 .main__chat_window {
@@ -78,7 +79,7 @@
 }
 
 .messages{
-    color: white;
+    color: yellow;
     list-style: none;
 }
 
@@ -109,14 +110,15 @@
     overflow-y: scroll;
     max-height: 80vh;
     
+    
  }
  video{
-    height: 200px;
+    height: 250px;
     width: 300px;
     object-fit: cover;
     margin : 8px;
     background-color: violet;
-    
+    border-color: #CC3B33;
  }
 
  
@@ -124,16 +126,17 @@
  display: none;
 }
 
-#huhu{
-    display:none;
-}
+
 
 @media only screen and (min-width: 700px) {
     #hehe{
         display: none;
     }
     
-
+    #huhu{
+        display:none;
+    }
+    
 }
 
 @media only screen and (max-width: 700px) {
