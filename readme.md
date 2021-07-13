@@ -67,9 +67,7 @@ ________________________________________________________________________________
 
 ## Layout of website from PC:
 
-![image](https://user-images.githubusercontent.com/62839539/125500535-97bfc0a6-90b9-404b-91d0-7c4ae88e12c2.png) ![image](https://user-images.githubusercontent.com/62839539/125500571-80f007e0-8a42-4ec1-b038-5cc33108be7c.png) ![image](https://user-images.githubusercontent.com/62839539/125500734-d005e030-05cc-4d17-8833-56a6008d4804.png)
-
-![WhatsApp Image 2021-07-13 at 11 23 35 PM](https://user-images.githubusercontent.com/62839539/125502961-42ae0a72-313d-4e0f-814a-7a2088512907.jpeg)
+![image](https://user-images.githubusercontent.com/62839539/125500535-97bfc0a6-90b9-404b-91d0-7c4ae88e12c2.png) ![image](https://user-images.githubusercontent.com/62839539/125500571-80f007e0-8a42-4ec1-b038-5cc33108be7c.png) ![image](https://user-images.githubusercontent.com/62839539/125500734-d005e030-05cc-4d17-8833-56a6008d4804.png) ![WhatsApp Image 2021-07-13 at 11 23 35 PM](https://user-images.githubusercontent.com/62839539/125502961-42ae0a72-313d-4e0f-814a-7a2088512907.jpeg)
 
 __________________________________________________________________________________________________________________________
 
