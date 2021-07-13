@@ -59,11 +59,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________________________
 
 ## Layout of website from PC:
-![image](https://user-images.githubusercontent.com/62839539/125500080-3510156c-eb20-4a68-b360-dc824b6a9514.png)
-
-![image](https://user-images.githubusercontent.com/62839539/125500121-5f69a9a0-55f5-429a-8fdb-bed6c1e9461d.png)
-
-![WhatsApp Image 2021-07-13 at 11 23 35 PM](https://user-images.githubusercontent.com/62839539/125502961-42ae0a72-313d-4e0f-814a-7a2088512907.jpeg)
+![image](https://user-images.githubusercontent.com/62839539/125500080-3510156c-eb20-4a68-b360-dc824b6a9514.png) ![image](https://user-images.githubusercontent.com/62839539/125500121-5f69a9a0-55f5-429a-8fdb-bed6c1e9461d.png)
 
 ![WhatsApp Image 2021-07-13 at 11 14 13 PM](https://user-images.githubusercontent.com/62839539/125500354-807c9f1f-3b4d-40ef-aeff-f668a7c594c8.jpeg)
 
@@ -71,14 +67,11 @@ ________________________________________________________________________________
 
 ## Layout of website from PC:
 
-![image](https://user-images.githubusercontent.com/62839539/125500535-97bfc0a6-90b9-404b-91d0-7c4ae88e12c2.png)
+![image](https://user-images.githubusercontent.com/62839539/125500535-97bfc0a6-90b9-404b-91d0-7c4ae88e12c2.png) ![image](https://user-images.githubusercontent.com/62839539/125500571-80f007e0-8a42-4ec1-b038-5cc33108be7c.png) ![image](https://user-images.githubusercontent.com/62839539/125500734-d005e030-05cc-4d17-8833-56a6008d4804.png)
 
-![image](https://user-images.githubusercontent.com/62839539/125500571-80f007e0-8a42-4ec1-b038-5cc33108be7c.png)
+![WhatsApp Image 2021-07-13 at 11 23 35 PM](https://user-images.githubusercontent.com/62839539/125502961-42ae0a72-313d-4e0f-814a-7a2088512907.jpeg)
 
-![image](https://user-images.githubusercontent.com/62839539/125500734-d005e030-05cc-4d17-8833-56a6008d4804.png)
-
-
-
+__________________________________________________________________________________________________________________________
 
 # Sprint sheet of day to day task by using Aglie methodology:
 - AGILE METHODOLOGY:-
