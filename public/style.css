@@ -119,13 +119,21 @@
     
  }
 
+ 
  #video-grid::-webkit-scrollbar {
  display: none;
 }
+
+#huhu{
+    display:none;
+}
+
 @media only screen and (min-width: 700px) {
     #hehe{
         display: none;
     }
+    
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -144,9 +152,6 @@
     .main__right {
         flex: 0;
     }
-
-    
-
 }
 
 
@@ -163,7 +168,7 @@
 
 
 
-
+ 
 
 
 
