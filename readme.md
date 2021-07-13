@@ -4,7 +4,8 @@
 I used agile methodaology for this project as mentioned as part of this program. I divided my whole task into 4 weeks. I started completing my tasks as sprint wise that helped in smooth learing and building the product. 
 
 # Deep design of website with features:
-![DESIGN OF MS CLONE (1)](https://user-images.githubusercontent.com/62839539/125268962-df9f8280-e325-11eb-90dc-5e9f221589dd.png)
+![DESIGN OF MS CLONE (1) (1)](https://user-images.githubusercontent.com/62839539/125456260-6fdf83a1-99a5-4cc7-817f-1c44e62d6e27.png)
+
 
 __________________________________________________________________________________________________________________________
 
