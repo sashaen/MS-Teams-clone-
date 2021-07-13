@@ -144,3 +144,16 @@ const setPlayVideo = () => {
   document.querySelector('.main__video_button').innerHTML = html;
 }
 
+function slide_window(){
+  document.querySelector('.main__right').style.flex = '1';
+  document.querySelector('.main__left').style.flex = '0' ;
+  document.querySelector('.main__right').style.display = 'flex';
+
+}
+
+function close_it(){
+  document.querySelector('.main__right').style.flex = '0';
+  document.querySelector('.main__left').style.flex = '1' ;
+ // document.querySelector('.main__right').style.display = 'flex';
+  
+}
