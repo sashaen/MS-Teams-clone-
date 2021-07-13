@@ -36,7 +36,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', requiresAuth(), (req,  res) => {
-  res.render('homePage')
+  res.render('homePage', { name: req.oidc.user.name, pic:req.oidc.picture})
 })
 
 app.get('/meeting', requiresAuth(), (req, res) => {
