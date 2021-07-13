@@ -53,7 +53,14 @@ ________________________________________________________________________________
 
 ### Authentication :
 - -- Auth0 SDK
-_________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________
+
+## Layout of website from PC:
+![image](https://user-images.githubusercontent.com/62839539/125500080-3510156c-eb20-4a68-b360-dc824b6a9514.png)
+
+![image](https://user-images.githubusercontent.com/62839539/125500121-5f69a9a0-55f5-429a-8fdb-bed6c1e9461d.png)
+
+
 
 # Sprint sheet of day to day task by using Aglie methodology:
 https://docs.google.com/spreadsheets/d/1Z6EWc6gf-vFaYvO6Fkzhe3O8OhwqvQwr_W18C_bTQCw/edit?usp=sharing
