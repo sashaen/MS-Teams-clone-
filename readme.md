@@ -1,6 +1,6 @@
 # Video calling-chat web application
 - Hi everyone! 
-- I created this video calling-chat web application for MS ENGAGE Program 2021. The website is fully functional and useable in real life. This is handy and easy to use. This lets a group of people to talk , chat and share any information together. This is functioned like this so that no two different meeting will clash by same name. Every time a unique ID will be created to enter room for video call and chat. 
+- I created this video calling-chat web application for MS ENGAGE Program 2021. The website is fully functional and useable in real life. This is easy to use. This lets a group of people to talk, chat and share any information together. This is functioned such  that no two different meeting will clash by same name. Every time a unique ID will be created to enter room for video call and chat. 
 I used agile methodaology for this project as mentioned as part of this program. I divided my whole task into 4 weeks. I started completing my tasks as sprint wise that helped in smooth learing and building the product. 
 
 ### Link of website: 
@@ -65,7 +65,7 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________
 
-## Layout of website from PC:
+## Layout of website from Smart Phone:
 
 ![image](https://user-images.githubusercontent.com/62839539/125500535-97bfc0a6-90b9-404b-91d0-7c4ae88e12c2.png) ![image](https://user-images.githubusercontent.com/62839539/125500571-80f007e0-8a42-4ec1-b038-5cc33108be7c.png) ![image](https://user-images.githubusercontent.com/62839539/125500734-d005e030-05cc-4d17-8833-56a6008d4804.png) ![WhatsApp Image 2021-07-13 at 11 23 35 PM](https://user-images.githubusercontent.com/62839539/125502961-42ae0a72-313d-4e0f-814a-7a2088512907.jpeg)
 
